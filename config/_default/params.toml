@@ -1,0 +1,56 @@
+# Meta description, not exceeding 160 characters, used for the meta description within the HTML head
+title = "RocketMyAds"
+description = 'Pehtheme Hugo Lite: A minimalist Hugo theme, built with TailwindCSS, for efficient performance and minimalism.'
+mainSections = 'posts'
+images = ["default-placeholder.png"]
+
+[social]
+  twitter = "mdo"
+  facebook_admin = ""
+
+# SEO (@thulite/seo) https://seo.thulite.io/
+[seo]
+  [seo.title]
+    separator = "" # "|" (default)
+    suffix = "" # title hugo.toml (default)
+  [seo.favicons]
+    icon = "favicon.png" # favicon.png (default)
+    svgIcon = "favicon.svg" # favicon.svg (default)
+  [seo.schemas]
+    type = "Organization" # Organization (default) or Person
+    logo = "logo.png" # Logo of Organization — favicon-512x512.png (default)
+    name = "RocketMyAds" # Name of Organization or Person
+    sameAs = [
+      "https://twitter.com/mdo",
+      "https://facebook.com/mdo",
+      "https://linkedin.com/company/mdo"
+    ] # E.g. ["https://github.com/thuliteio/thulite", "https://fosstodon.org/@thulite"]
+    images = ["default-placeholder.png"] # ["cover.png"] (default)
+    article = [] # Article sections
+    newsArticle = [] # NewsArticle sections
+    blogPosting = ["posts"] # BlogPosting sections
+    product = [] # Product sections
+
+[author]
+  name = 'Fauzan My'
+  homepage = 'https://fzn.my.id/'
+  bio = 'Debitis assumenda esse dignissimos aperiam delectus maxime tenetur repudiandae dolore'
+  avatar = '/images/nasa-astronaut-unsplash.jpg'
+  twitter = 'https://twitter.com/insertapps'
+
+# Images (@thulite/images)
+[thulite_images]
+  [thulite_images.defaults]
+    decoding = "async" # sync, async, or auto (default)
+    fetchpriority = "auto" # high, low, or auto (default)
+    loading = "lazy" # eager or lazy (default)
+    widths = [480, 576, 768, 1025, 1200, 1440, 1600, 1920] # [640, 768, 1024, 1366, 1600, 1920] for example
+    sizes = "auto" # 100vw (default), 75vw, or auto for example
+    process = "fill 1600x900" # "fill 1600x900" or "fill 2100x900" for example
+    lqip = "750x webp q80" # "16x webp q20" or "21x webp q20" for example
+
+[options]
+  lazySizes = true
+  flexSearch = true
+  searchSectionsShow = []
+  searchSectionsIndex = []

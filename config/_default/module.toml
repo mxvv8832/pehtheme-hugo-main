@@ -1,0 +1,40 @@
+[hugoVersion]
+  extended = false
+  min = "0.147.9"
+  max = ""
+
+## static
+[[mounts]]
+  source = "static"
+  target = "static"
+
+## assets
+[[mounts]]
+  source = "assets"
+  target = "assets"
+[[mounts]]
+  source = "node_modules/flexsearch/dist"
+  target = "assets"
+[[mounts]]
+  source = "node_modules/lazysizes"
+  target = "assets"
+[[mounts]]
+  source = "node_modules/@thulite/images/assets"
+  target = "assets"
+[[mounts]]
+  source = "node_modules/@thulite/seo/assets"
+  target = "assets"
+[[mounts]]
+  source = "node_modules/@tabler/icons/icons"
+  target = "assets/svgs/tabler-icons"
+
+## layouts
+[[mounts]]
+  source = "layouts"
+  target = "layouts"
+[[mounts]]
+  source = "node_modules/@thulite/images/layouts"
+  target = "layouts"
+[[mounts]]
+  source = "node_modules/@thulite/seo/layouts"
+  target = "layouts"

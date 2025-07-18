@@ -1,0 +1,47 @@
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+img, picture {
+  font-size: 0;
+}
+
+img[data-sizes="auto"] {
+  display: block;
+}
+
+.blur-up {
+  filter: blur(5px);
+  // transition: filter 400ms;
+}
+
+.blur-up.lazyloaded {
+  filter: unset;
+}
+
+figcaption {
+  font-style: italic;
+  text-align: center;
+}
+
+.zoom-container { cursor: zoom-in; }
+.zoom-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.9);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.zoom-overlay.active { display: flex; }
+.zoomed-image { max-width: 90%; max-height: 90%; }
+.zoom-close {
+  position: absolute;
+  top: 20px; right: 20px;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}

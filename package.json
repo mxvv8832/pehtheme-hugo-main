@@ -1,0 +1,42 @@
+{
+  "name": "pehtheme",
+  "version": "1.0.1",
+  "description": "An open-source Hugo theme lovingly crafted using Tailwind CSS.",
+  "main": "index.js",
+  "scripts": {
+    "create": "exec-bin node_modules/.bin/hugo new",
+    "dev:generate": "npx tailwindcss -i ./assets/input.css -o ./themes/pehtheme/assets/css/main.css -w",
+    "dev": "exec-bin node_modules/.bin/hugo server --bind=0.0.0.0 --disableFastRender --environment development",
+    "build:preview": "npm run build -D -F",
+    "build:generate": "npx tailwindcss -i ./assets/input.css -o ./themes/pehtheme/static/assets/css/main.css",
+    "build": "exec-bin node_modules/.bin/hugo --gc --minify",
+    "clean": "shx rm -rf public resources .hugo_build.lock",
+    "clean:install": "shx rm -rf package-lock.json node_modules"
+  },
+  "keywords": [
+    "hugo",
+    "tailwindcss"
+  ],
+  "author": "creio",
+  "license": "MIT",
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^4.1",
+    "@tailwindcss/typography": "^0.5.10",
+    "autoprefixer": "^10.4.21",
+    "exec-bin": "^1.0.0",
+    "flexsearch": "^0.7.21",
+    "hugo-extended": "^0.147.9",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.5.6",
+    "postcss-cli": "^10.1.0",
+    "purgecss-whitelister": "^2.4",
+    "shx": "^0.3.3",
+    "tailwindcss": "^3.3.3"
+  },
+  "dependencies": {
+    "@tabler/icons": "^3.20.0",
+    "@thulite/images": "^3.3.1",
+    "@thulite/seo": "^2.4.1",
+    "lazysizes": "^5.3.2"
+  }
+}
